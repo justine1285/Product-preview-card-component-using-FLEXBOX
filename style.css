@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-top: 70px;
+   background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    display: flex;
+    max-height: 430px;
+    max-width: 650px;
+    margin: 10px;
+}
+
+.text-container {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.image-container {
+    width: 50%;
+}
+
+.image-product {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    flex: 1;
+    padding: 25px 40px 40px 35px;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    color: hsl(212, 21%, 14%);
+    padding-right: 10px;
+    line-height: 35px;
+    padding-bottom: 20px;
+}
+
+p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+    padding-right: 22px;
+}
+
+.number {
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.number1 {
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+}
+
+.number2 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.button-container {
+    text-align: center;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 13px 75px 13px 75px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    border-radius: 8px;
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: hsl(158, 38%, 14%);
+}
+
+.image-icon {
+    padding-right: 4px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        max-width: 350px;
+        max-height: 200px;
+    }
+
+    .image-container {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-product {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+body {
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+    
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%);
+    font-family: 'Red Hat Display', sans-serif; 
+}
